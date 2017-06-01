@@ -20,10 +20,12 @@ include '_topo.php';
 		<h3>Cadastrar compras</h3>
 		<form action="php/formCompra.php" method="post">
 			<div class="form-group row">
-				<input type="number" step=0.01 class="form-control" id="formGroupExampleInput" placeholder="R$ 00,00">
+
+				<input type="number" name="compra" step=0.01 class="form-control" id="formGroupExampleInput" placeholder="R$ 00,00">
 				<input type="date" class="form-control" id="data" name="data">
 				<input type="number" class="form-control" id="data" value="<?php echo '2';?>" name="fk"><br>
 				<button id="pnlBtn" type="submit" name="btnCompra" class="btn btn-info">Cadastrar compra</button>
+				
 			</div>
 		</form>
 	</div>

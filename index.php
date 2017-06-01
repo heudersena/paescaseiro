@@ -32,7 +32,7 @@ require_once 'php/vendas.php';
      <table class="table table-bordered table-sm">
       <thead>
         <tr class="" id="tb">
-        <h3 class="text-center text-muted" id="h3">Relação das vendas</h3>
+          <h3 class="text-center text-muted" id="h3">Relação das vendas</h3>
           <th>Venda:</th>
           <th>Data</th>
           <th>Ação</th>

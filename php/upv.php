@@ -1,4 +1,4 @@
 <?php
 
 $up = $_GET['up'];
-echo $up;
+echo $up

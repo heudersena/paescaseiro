@@ -3,12 +3,12 @@
 if (isset($_GET['del'])) {
 	require_once 'conexao.php';
 	$del = $_GET['del'];
-	$id = "DELETE FROM venda WHERE idvenda = $del";
+	$id = "DELETE  FROM compra WHERE id = $del";
 	var_dump($id);
 	$stmt = mysqli_query($link, $id);
-	var_dump($stmt);	
-	header("location: ../index.php");
+	header("location: ../compra.php");
 	die();
 }else{
 	echo "Erro ao deletar dados";
 }
+?>
