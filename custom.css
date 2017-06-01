@@ -1,0 +1,46 @@
+/*Pagina de css para fazer costumização á parte dos frameworks*/
+
+/*Zera as margins*/
+*{
+	margin: 0;
+	padding: 0;
+}
+h3{
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+button,input{
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 300;
+}
+
+#data{
+	display: none;
+}
+
+#nav,#tb{
+	background: rgb(0,195,255);
+}
+#tb,button{
+	background: rgb(0,195,255);
+	color: #FFF;
+}
+#nav a{
+	color: #FFF;
+}
+
+#nav a:hover{
+	color:#DCDCDC;
+}
+
+#pnlBtn{
+	margin-top: 4px;
+}
+#h3{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+}
