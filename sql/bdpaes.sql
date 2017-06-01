@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 31/05/2017 às 23:47
+-- Tempo de geração: 01/06/2017 às 19:09
 -- Versão do servidor: 5.7.18-0ubuntu0.17.04.1
 -- Versão do PHP: 7.0.18-0ubuntu0.17.04.1
 
@@ -40,7 +40,9 @@ CREATE TABLE `compra` (
 INSERT INTO `compra` (`id`, `compra`, `data`, `produto_idproduto`) VALUES
 (1, '17.90', '2017-05-29 00:00:00', 2),
 (2, '11.00', '2017-05-30 00:00:00', 2),
-(3, '6.70', '2017-05-30 00:00:00', 2);
+(3, '6.70', '2017-05-30 00:00:00', 2),
+(4, '9.00', '2017-06-01 00:00:00', 2),
+(5, '12.00', '2017-06-01 13:38:33', 2);
 
 -- --------------------------------------------------------
 
@@ -82,7 +84,8 @@ CREATE TABLE `venda` (
 INSERT INTO `venda` (`idvenda`, `venda_diarias`, `data`, `produto_idproduto`) VALUES
 (1, '46.00', '2017-05-29 00:00:00', 1),
 (2, '35.00', '2017-05-30 00:00:00', 1),
-(15, '35.00', '2017-05-31 22:45:59', 1);
+(15, '35.00', '2017-05-31 22:45:59', 1),
+(17, '43.00', '2017-06-01 18:54:42', 1);
 
 --
 -- Índices de tabelas apagadas
@@ -116,7 +119,7 @@ ALTER TABLE `venda`
 -- AUTO_INCREMENT de tabela `compra`
 --
 ALTER TABLE `compra`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de tabela `produto`
 --
@@ -126,7 +129,7 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT de tabela `venda`
 --
 ALTER TABLE `venda`
-  MODIFY `idvenda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `idvenda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- Restrições para dumps de tabelas
 --
