@@ -30,6 +30,12 @@ require_once 'php/vendas.php';
 
  <div class="row">
    <div class="col-md-12">
+   <?php 
+    foreach ($b as $total) {
+  
+  echo 'R$: '.$total["sum(venda_diarias)"].' de vendas';
+}
+     ?>
      <table class="table table-bordered table-sm">
       <thead>
         <tr class="" id="tb">

@@ -2,8 +2,7 @@
 include '_topo.php';
 require_once 'php/conexao.php';
 require_once 'php/compras.php';
-
-
+// Soma dos Valores Gastos
 ?>
 <br>
 <div class="container">
@@ -28,6 +27,12 @@ require_once 'php/compras.php';
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
+		<?php 
+		foreach ($b as $total) {
+	
+	echo 'R$: '.$total["sum(compra)"].' de gastos';
+}
+		 ?>
 			<table class="table table-bordered table-sm">
 				<thead>
 					<tr id="tb">
